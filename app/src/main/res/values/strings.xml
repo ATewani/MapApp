@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MapProject</string>
+    <string name="apikey">AIzaSyAUlFGchgutWsAPpQuZe4j14hwOep8s0wY</string>
+    <string name="mapapikey">AIzaSyBTrlowHO9OHpm2b7FY87Ap4S8Pg0Jnqvg</string>
+    <string name="title_activity_addressto_coordinates">AddresstoCoordinates</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_game">Map</string>
+</resources>

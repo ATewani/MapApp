@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.mapproject.MapsActivity">
+
+<android.support.design.widget.AppBarLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="8dp">
+
+</android.support.design.widget.AppBarLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:context="com.example.mapproject.MapsActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="0dp"
+    android:layout_height="46dp"
+    android:onClick="enterAddress"
+    android:text="ENTER"
+    android:layout_marginEnd="16dp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="16dp"
+    app:layout_constraintRight_toLeftOf="@+id/temp"
+    android:layout_marginRight="4dp" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="--°F"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
+
+
+</android.support.constraint.ConstraintLayout>
